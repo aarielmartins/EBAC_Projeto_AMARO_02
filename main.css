@@ -1,0 +1,96 @@
+/*NÃO PRECISA DO RESET PQ O BOOTSTRAP JÁ APLICA*/
+
+body{
+    font-family: Roboto, sans-serif;
+}
+
+.navbar{
+    background-color: #fff;
+}
+
+#cabecalho .nav .nav-link.active{ /*QDO A CLASSE ESTA NA MESMA TAG NÃO DA ESPAÇO*/
+    color: #000;
+    background-color: #f1efe8;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover{
+    color: #000;
+}
+
+.navbar-toggler{
+    background-color: #f1efe8;
+}
+
+header img{
+    width: 8em;
+}
+
+header input{
+    width: 20em;
+}
+
+.pesquisa{
+    background-color: #f1efe8;
+    display: flex;
+    border-radius: .8em;
+    align-items: center;
+    padding: .5em 0;
+}
+
+header input{
+    border: none;
+    background-color: transparent;
+}
+
+.pesquisa img{
+    width: 1.2em;
+    margin: 0 1em;
+}
+
+.carousel-item img{
+    width: 100%;
+}
+
+.section-title{
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.row img{
+    width: 100%;
+}
+
+#novidades,
+#newsletter{
+    background-color: #f1efe8;
+}
+
+.text-colored{
+    color: #000000;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button{
+    background-color: #e15f41;
+    color: #fff;
+}
+
+
+.nav-cardapio .nav-link:hover{
+    color: #e15f41;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+

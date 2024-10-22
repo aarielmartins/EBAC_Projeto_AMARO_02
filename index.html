@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--ATIVA O BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="main.css"> <!--FONTES ANTES DO CSS-->
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho"> <!--NAVBAR-EXPAND-LG: PARA EXPANDIR O MENU QUANDO FOR TELA GRANDE/ STICKY-TOP: PARA GRUDAR O MENU NO TOPO DA VIEWPORT -->
+        <div class="container">
+            <img src="./images/Logo.png" alt="Logo Amaro"> <!--NAVBAR-BRAND: ESTILIZA O NOME DA MARCA OU LOGOTIPO/ PT-4: ADICIONA UM PADDING TOP-->
+            <div class="pesquisa m-4 d-none d-md-flex">
+                <img src="./images/Lupa.png">
+                <input type="text" placeholder="O que você esta procurando?"/>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"> <!--NAVBAR-TOGGLER: CRIA O MENU SANDUICHE-->
+                <span class="navbar-toggler-icon"></span> <!--NAVBAR-TOGGLER-ICON: CRIA O ÍCONE DO MENU SANDUICHE-->
+            </button>
+            <nav class="navbar-collapse collapse justify-content-center" id="menu-navegacao"> <!--NAVBAR-COLLAPSE E COLLAPSE: COLLAPSAM EM MENU SANDUÍCHE-->
+                <ul class="nav nav-pills d-block d-md-flex"> <!-- NAV:ALINHA OS LINKS / NAV-PILLS: INICIA O ESTILO DOS ITENS/ D-BLOCK E D-MD-FLEX: ADICIONAM O DISPLAY BLOCK ATÉ MUDAR PARA TELA MÉDIA, AI VIRA DISPLAY FLEX-->
+                    <li class="nav-item fw-bold"> <!-- NAV-ITEM: CRIA A ESTILIZAÇÃO NOS LI/ FW-BOLD: COLOCA EM NEGRITO-->
+                        <a class="nav-link" href="#guide-shop"> <!-- NAV-ITEM: CRIA A ESTILIZAÇÃO NOS A/ ACTIVE: MOSTRA A PÁGINA ATIVA DO MENU-->
+                            SHOPS
+                        </a> 
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#novidades">
+                            NOVIDADES
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#moda">
+                            MODA
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#newsletter">
+                            NEWS
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-smooth-scroll="true" data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section id="guide-shop">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/carousel_1.png">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/carousel_2.png">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/carousel_3.png">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/Guide Shop.png" class="d-block w-100 rounded" alt="Foto da guide shop">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0 d-flex flex-column justify-content-center">
+                            <h2 class="section-title">Conheça nossos guide shops</span></h2>
+                            <p>
+                                Mais do que uma loja: aqui, você tem uma experiência super intuitiva, personalizada e sem aquela fila na hora de passar no caixa. Ah, e você pode levar todas as peças que amou na hora para casa, testar novos estilos, pedir dicas para a nossa equipe e, claro, criar a versão mais incrível de você mesma.
+                            </p>
+                            <h3 class="section-title">Amou, comprou, levou</span></h3>
+                            <p>
+                                É fato: entrou no Guide Shop, saiu com sacola. Afinal, é impossível experimentar e não querer levar todos os nossos looks para casa. E, sim, se tem aqui, dá levar na hora com você. Simples assim!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="novidades" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center"> Novidades em até 6x sem juros</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4 p-0">
+                        <img class="mb-2 d-block w-100" src="./images/novidade_1.png">
+                    </div>
+                    <div class="col-md-4 p-0">
+                        <img class="mb-2 d-block w-100" src="./images/novidade_2.png">
+                    </div>
+                    <div class="col-md-4 p-0">
+                        <img class="mb-2 d-block w-100" src="./images/novidade_3.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="moda" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="./images/produto_1.png">
+                        <h5>Calça Regata Fina de Pregas</h5>
+                        <h6><strong>R$ 179,90 </strong> <del>R$ 200,00</del></h6>
+                        <button type="button" class="btn btn-dark">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="./images/produto_2.png">
+                        <h5>Calça com Cós Transpassado</h5>
+                        <h6><strong>R$ 249,90 </strong> <del>R$ 320,00</del></h6>
+                        <button type="button" class="btn btn-dark">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="./images/produto_3.png">
+                        <h5>Shorts Sarja Essential Simples</h5>
+                        <h6><strong>R$ 159,90 </strong> <del>R$ 200,00</del></h6>
+                        <button type="button" class="btn btn-dark">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="./images/produto_4.png">
+                        <h5>Blazer com Abotoamento</h5>
+                        <h6><strong>R$ 389,90 </strong> <del>R$ 219,00</del></h6>
+                        <button type="button" class="btn btn-dark">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter" class="pt-5 pb-5">
+            <div class="row">
+                <h2 class="section-title text-center">Newsletter</h2>
+                <h5 class="text-center m-auto p-3">As melhores novidades chegam primeiro aqui. Insira seu nome e e-mail para ganhar 15% OFF na sua primeira compra a partir de R$400 no site.</h5>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form class="p-4 d-flex flex-column">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" required id="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" required id="email" placeholder="Seu email">
+                        </div>
+                        <button type="submit" class="btn btn-dark fw-bold">CADASTRAR</button>
+                    </form>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <ul class="social-links d-flex justify-content-center">
+                            <li class="fs-5">
+                                <a href="">
+                                    <i class="bi bi-facebook text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5 ms-1 me-1"> <!-- MS-MARGEM PRA ESQUERDA/ ME: MARGEM PRA DIREITA-->
+                                <a href="">
+                                    <i class="bi bi-instagram text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5">
+                                <a href="">
+                                    <i class="bi bi-whatsapp text-colored"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
